@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fitnessmedia_congressionalappchallenge">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FitnessMediaCongressionalAppChallenge"
+        tools:targetApi="31">
+        <activity
+            android:name=".GetXpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CoinsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FitnessTimeBike"
+            android:exported="false" />
+        <activity
+            android:name=".StatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FitnessPass"
+            android:exported="false" />
+        <activity
+            android:name=".GroupChatUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddFriendGroupChat"
+            android:exported="true" />
+        <activity
+            android:name=".CreateGroupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MarketPlace"
+            android:exported="false" />
+        <activity
+            android:name=".GroupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NoInternetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DailyQuest"
+            android:exported="false" />
+        <activity
+            android:name=".Calender"
+            android:exported="false" />
+        <activity
+            android:name=".PasswordLogin"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecurityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CurrentFriendsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CurrentFriendPersonProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FriendRequestPersonProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FriendRequestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PersonProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddFriendActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Friend_Activity"
+            android:exported="true" />
+
+        <receiver android:name=".Notification_receiver" />
+
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityProfile"
+            android:exported="true" />
+        <activity
+            android:name=".InformationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

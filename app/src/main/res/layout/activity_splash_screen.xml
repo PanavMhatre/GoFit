@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="@color/blue">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/firstBackImage"-->
+<!--        android:layout_width="205dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:src="@drawable/gym_background" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/secondBackImage"-->
+<!--        android:layout_width="205dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_toRightOf="@+id/firstBackImage"-->
+<!--        android:src="@drawable/gym_background" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/thirdBackImage"-->
+<!--        android:layout_width="205dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:src="@drawable/gym_background"-->
+<!--        android:layout_marginTop="200dp"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/fourthBackImage"-->
+<!--        android:layout_width="205dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_toRightOf="@+id/firstBackImage"-->
+<!--        android:src="@drawable/gym_background"-->
+<!--        android:layout_marginTop="200dp"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/fifthBackImage"-->
+<!--        android:layout_width="205dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:src="@drawable/gym_background"-->
+<!--        android:layout_marginTop="400dp"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/sixthImage"-->
+<!--        android:layout_width="205dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_toRightOf="@+id/fifthBackImage"-->
+<!--        android:src="@drawable/gym_background"-->
+<!--        android:layout_marginTop="400dp"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/seventhImage"-->
+<!--        android:layout_width="205dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:src="@drawable/gym_background"-->
+<!--        android:layout_alignParentBottom="true"/>-->
+
+<!--    <ImageView-->
+
+<!--        android:layout_width="205dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_toRightOf="@+id/seventhImage"-->
+<!--        android:src="@drawable/gym_background"-->
+<!--        android:layout_marginTop="400dp"-->
+<!--        android:layout_alignParentBottom="true"/>-->
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="55dp"
+        android:src="@drawable/logo" />
+
+
+</RelativeLayout>

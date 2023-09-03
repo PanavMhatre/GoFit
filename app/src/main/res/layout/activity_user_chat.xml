@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserChatActivity"
+    android:background="@color/blue">
+
+    <include
+        android:id="@+id/chat_friend_toolbar"
+        layout="@layout/chat_toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/private_messages_list_of_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_linear_layout"
+        android:layout_below="@id/chat_friend_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/chat_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userMessageLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="320dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:hint="Enter message"
+            android:padding="10dp"
+            android:shadowColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:tint="@color/gray"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="30dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusTopStart="30dp"
+            app:boxStrokeColor="@color/gray"
+            app:hintTextColor="@color/gray"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="5dp"
+            app:endIconDrawable="@drawable/camera"
+            app:endIconMode="custom"
+            app:endIconTint="@color/gray">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/messageText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:outlineAmbientShadowColor="@color/gray"
+                android:outlineSpotShadowColor="@color/gray"
+                android:shadowColor="@color/gray"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                />
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="17dp"
+            android:id="@+id/messageSend"
+            android:background="@drawable/round_button"
+            android:padding="15dp"
+            android:src="@drawable/send_message"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

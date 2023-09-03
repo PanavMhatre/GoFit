@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    tools:context=".StatsActivity"
+    android:background="@color/blue">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="-2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/outline">
+
+                <com.androidplot.xy.XYPlot
+                    android:id="@+id/plotWeekly"
+
+                    style="@style/APDefacto.Light"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginTop="30dp"
+                    ap:graphBackgroundColor="@color/white"
+                    ap:lineLabelRotationBottom="-45"
+
+                    app:backgroundColor="@color/white"
+                    app:borderColor="@color/white"
+                    app:lineLabels="left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:text="Weekly"
+                    android:textColor="@color/gray"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="350dp"-->
+            <!--                android:layout_height="400dp"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:layout_marginLeft="30dp"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:background="@drawable/outline">-->
+
+            <!--                <com.androidplot.xy.XYPlot-->
+            <!--                    android:id="@+id/plotDaily"-->
+
+            <!--                    style="@style/APDefacto.Light"-->
+            <!--                    android:layout_width="316dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerHorizontal="true"-->
+            <!--                    android:layout_marginLeft="0dp"-->
+            <!--                    android:layout_marginTop="30dp"-->
+            <!--                    ap:graphBackgroundColor="@color/white"-->
+            <!--                    ap:lineLabelRotationBottom="-45"-->
+            <!--                    app:backgroundColor="@color/white"-->
+            <!--                    app:borderColor="@color/white"-->
+            <!--                    app:lineLabels="left" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="-2dp"-->
+            <!--                    android:text="Daily"-->
+            <!--                    android:textColor="@color/gray"-->
+            <!--                    android:textSize="25dp"-->
+            <!--                    android:textStyle="bold" />-->
+
+
+            <!--            </RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="400dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/outline"
+                android:layout_marginBottom="20dp">
+
+                <com.androidplot.xy.XYPlot
+                    android:id="@+id/plotMontly"
+
+                    style="@style/APDefacto.Light"
+                    android:layout_width="316dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="30dp"
+                    ap:graphBackgroundColor="@color/white"
+                    ap:lineLabelRotationBottom="-45"
+                    app:backgroundColor="@color/white"
+                    app:borderColor="@color/white"
+                    app:lineLabels="left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:text="Monthly"
+                    android:textColor="@color/gray"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:id="@+id/logoBIG"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:hint="Username"
+        android:paddingLeft="80dp"
+        android:shadowColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:tint="@color/gray"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/gray"
+        app:hintTextColor="@color/gray"
+        app:startIconDrawable="@drawable/name"
+        app:startIconTint="@null">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:outlineAmbientShadowColor="@color/gray"
+            android:outlineSpotShadowColor="@color/gray"
+            android:shadowColor="@color/gray"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageLayout"
+        android:layout_below="@+id/nameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:hint="Age"
+        android:paddingStart="80dp"
+        android:textColorHint="@color/gray"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/gray"
+        app:hintTextColor="@color/gray"
+        app:startIconDrawable="@drawable/age"
+        app:startIconTint="@null">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/age"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:outlineAmbientShadowColor="@color/gray"
+            android:outlineSpotShadowColor="@color/gray"
+            android:shadowColor="@color/gray"
+            android:textColor="@color/gray"
+            android:textColorHighlight="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textColorLink="@color/gray" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ageLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:hint="Email"
+        android:paddingLeft="80dp"
+        android:shadowColor="@color/gray"
+        android:textColorHint="@color/gray"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/gray"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/gray"
+        app:startIconDrawable="@drawable/gmail"
+        app:startIconTint="@null">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/gray" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/continueButton"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/passwordLayout"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:text="Continue"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logoBIG"
+        android:layout_marginTop="-70dp"
+        android:layout_marginBottom="20dp"
+        android:text="Welcome to Fitness Media"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailLayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:hint="Password"
+        android:paddingLeft="80dp"
+        android:shadowColor="@color/gray"
+        android:textColorHint="@color/gray"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/gray"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/gray"
+        app:startIconDrawable="@drawable/password"
+        app:startIconTint="@null">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:inputType="textWebPassword"
+            android:textColor="@color/gray" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>
